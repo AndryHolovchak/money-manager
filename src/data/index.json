@@ -1,0 +1,38 @@
+{
+  "incomes": [
+    {
+      "amount": {
+        "value": "16000",
+        "currency": "UAH"
+      },
+      "timestamp": "Thu, 30 Sep 2021 19:29:04 GMT",
+      "category": "Salary"
+    }
+  ],
+  "expenses": [
+    {
+      "amount": {
+        "value": "300",
+        "currency": "UAH"
+      },
+      "timestamp": "Mon, 27 Sep 2021 19:29:04 GMT",
+      "category": "Car"
+    },
+    {
+      "amount": {
+        "value": "10",
+        "currency": "UAH"
+      },
+      "timestamp": "Mon, 27 Sep 2021 19:29:04 GMT",
+      "category": "Transport"
+    },
+    {
+      "amount": {
+        "value": "32",
+        "currency": "UAH"
+      },
+      "timestamp": "Mon, 27 Sep 2021 19:29:04 GMT",
+      "category": "Food"
+    }
+  ]
+}

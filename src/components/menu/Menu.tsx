@@ -25,8 +25,12 @@ export const Menu = () => {
 
   return (
     <div className={styles.menu}>
-      {menuItems.map((item) => (
-        <MenuItem info={item} isActive={item.route === location.pathname} />
+      {menuItems.map((item, i) => (
+        <MenuItem
+          info={item}
+          isActive={item.route === location.pathname}
+          key={i}
+        />
       ))}
     </div>
   );
