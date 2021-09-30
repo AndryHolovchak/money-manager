@@ -1,0 +1,21 @@
+@import '../../styles'
+
+.menu
+  display: flex
+  align-items: center
+  height: 100%
+  background-color: lighten($background_color, 10%)
+
+.menu_item
+  display: flex
+  align-items: center
+  justify-content: center
+  flex: 1
+  height: 100%
+
+  &__icon
+    color: $white_1
+
+  &--active
+    .menu_item__icon
+      color: $accent_color
