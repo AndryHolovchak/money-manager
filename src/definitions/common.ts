@@ -3,13 +3,12 @@ export enum Currency {
   USD = "USD",
 }
 
-export enum ExpenseCategory {
+export enum CategoryType {
   Food = "Food",
   Car = "Car",
-  Transport = "Transport",
-}
-
-export enum IncomeCategory {
+  PublicTransport = "Public Transport",
+  Nicotine = "Nicotine",
+  Custom = "Custom",
   Salary = "Salary",
   Crypto = "Crypto",
 }

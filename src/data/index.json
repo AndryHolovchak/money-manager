@@ -1,38 +1,44 @@
 {
-  "incomes": [
-    {
-      "amount": {
-        "value": "16000",
-        "currency": "UAH"
+  "payments": [],
+  "chart": {},
+  "user": {
+    "quickPayments": [
+      {
+        "name": "IQOS HEETS",
+        "amount": {
+          "value": "-70",
+          "currency": "UAH"
+        },
+        "category": {
+          "type": "Nicotine",
+          "name": "Nicotine",
+          "icon": "smoking"
+        }
       },
-      "timestamp": "Thu, 30 Sep 2021 19:29:04 GMT",
-      "category": "Salary"
-    }
-  ],
-  "expenses": [
-    {
-      "amount": {
-        "value": "300",
-        "currency": "UAH"
+      {
+        "name": "Bus",
+        "amount": {
+          "value": "-10",
+          "currency": "UAH"
+        },
+        "category": {
+          "type": "PublicTransport",
+          "name": "Public Transport",
+          "icon": "bus"
+        }
       },
-      "timestamp": "Mon, 27 Sep 2021 19:29:04 GMT",
-      "category": "Car"
-    },
-    {
-      "amount": {
-        "value": "10",
-        "currency": "UAH"
-      },
-      "timestamp": "Mon, 27 Sep 2021 19:29:04 GMT",
-      "category": "Transport"
-    },
-    {
-      "amount": {
-        "value": "32",
-        "currency": "UAH"
-      },
-      "timestamp": "Mon, 27 Sep 2021 19:29:04 GMT",
-      "category": "Food"
-    }
-  ]
+      {
+        "name": "Salary",
+        "amount": {
+          "value": "16000",
+          "currency": "UAH"
+        },
+        "category": {
+          "type": "Salary",
+          "name": "Salary",
+          "icon": "sack"
+        }
+      }
+    ]
+  }
 }

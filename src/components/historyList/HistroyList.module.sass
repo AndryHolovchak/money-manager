@@ -1,0 +1,28 @@
+@import '../../styles'
+
+.history_list
+  width: 95%
+  margin: 10px auto 0 auto
+  padding: 10px 20px
+  border-radius: 8px
+  background-color: $background_color_1
+
+.list_item
+  display: flex
+  align-items: center
+
+  &:not(&:first-child)
+    margin-top: 20px
+
+  &__icon
+    margin-right: 10px
+    color: rgba($accent_color, 0.7)
+
+  &__amount
+    margin-left: auto
+
+    &--income
+      color: $green_1
+    &--outcome
+     color: $red_1 
+    

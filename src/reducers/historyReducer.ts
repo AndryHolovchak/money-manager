@@ -1,40 +1,30 @@
+import { Payment } from "./../types/common.d";
 import { RootState } from "./../app/store";
-import { Income, Expsense } from "./../types/common.d";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 export interface HistoryState {
-  incomes: Income[];
-  expenses: Expsense[];
+  payments: Payment[];
 }
 
 const initialState: HistoryState = {
-  incomes: [],
-  expenses: [],
+  payments: [],
 };
 
 export const historySlice = createSlice({
   name: "history",
   initialState,
   reducers: {
-    addIncome: (state, action: PayloadAction<Income>) => {
-      state.incomes = [...state.incomes, action.payload];
+    addPayment: (state, action: PayloadAction<Payment>) => {
+      state.payments = [...state.payments, action.payload];
     },
-    addExpense: (state, action: PayloadAction<Expsense>) => {
-      state.expenses = [...state.expenses, action.payload];
-    },
-    setIncomes: (state, action: PayloadAction<Income[]>) => {
-      state.incomes = [...action.payload];
-    },
-    setExpenses: (state, action: PayloadAction<Expsense[]>) => {
-      state.expenses = [...action.payload];
+    setPayments: (state, action: PayloadAction<Payment[]>) => {
+      state.payments = [...action.payload];
     },
   },
 });
 
-export const { addIncome, addExpense, setIncomes, setExpenses } =
-  historySlice.actions;
+export const { addPayment, setPayments } = historySlice.actions;
 
-export const selectIncomes = (state: RootState) => state.history.incomes;
-export const selectExpenses = (state: RootState) => state.history.expenses;
+export const selectPayments = (state: RootState) => state.history.payments;
 
 export default historySlice.reducer;
