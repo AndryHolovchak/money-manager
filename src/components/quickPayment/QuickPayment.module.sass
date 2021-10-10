@@ -1,0 +1,23 @@
+@import '../../styles'
+
+.quick_payment
+  display: flex
+  align-items: center
+  justify-content: space-between
+  position: relative
+  width: 95%
+  padding: 10px 20px
+  border-radius: 8px
+  background-color: $background_color_1
+
+  &:not(&:first-child)
+    margin-top: 5px
+
+  &__name
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 14px
+    font-weight: 600
+    
